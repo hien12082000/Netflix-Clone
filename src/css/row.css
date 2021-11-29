@@ -1,0 +1,43 @@
+.row{
+    margin-left:20px;
+}
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+.row__posters::-webkit-scrollbar{
+    /* lam an thanh cuon va giu lai chuc nang cua thanh cuon (hien tai chua thay chuc nang dau) */
+    display: none;
+}
+
+h2 {
+  color: #fff;
+}
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+    /* overflow: xác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung
+    overflow-x/y: theo chieu x/y
+    mac dinh la visible;
+    hidden : ko hien;
+    scroll : thanh cuon
+    */
+.row__poster:hover {
+  transform: scale(1.08);
+}
+/* transform chinh hieu ung cua anh
+    scale(a): hieu ung phong to/thu nho anh(kich thuoc can phong to/thu nho)
+  */
+
+  .row__posterLarge{
+    max-height: 250px;
+  }
+  .row__posterLarge:hover {
+    transform: scale(1.09);
+}
